@@ -46,5 +46,5 @@ Apresentar de forma profissional minhas habilidades técnicas e projetos desenvo
 
 ---
 <div align="center">
-  Desenvolvido com 💻 por João Victor Lopes Rosa
+  João Victor Lopes Rosa © 2025
 </div>
