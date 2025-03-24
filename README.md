@@ -7,45 +7,33 @@
 
 ## 🚀 Sobre o Projeto
 
-Portfolio profissional desenvolvido com tecnologias web modernas, apresentando minhas competências técnicas e projetos como desenvolvedor Full Stack.
+Portfolio em desenvolvimento que representa minha jornada inicial como desenvolvedor. Um projeto simples e funcional que crescerá junto com minhas habilidades e experiências.
 
 ### 💻 Tecnologias Utilizadas
 
-- **Frontend:**
-  - HTML5
-  - CSS3
-  - JavaScript
-
-- **Frameworks & Bibliotecas:**
-  - React
-  - Bootstrap
-
-- **Backend:**
-  - Node.js
-  - Python
-
-- **Banco de Dados:**
-  - PostgreSQL
-  - MongoDB
+- HTML5
+- CSS3
+- JavaScript Vanilla
 
 ### ⚡ Características
 
-- Design responsivo
-- Interface moderna e intuitiva
-- Otimizado para SEO
-- Integração com DevIcons
-- Performance otimizada
+- Design limpo e minimalista
+- Estrutura preparada para adicionar novos projetos
+- Código organizado e comentado
+- Base sólida para expansão futura
 
 ## 🎯 Objetivos
+## 🎯 Objetivos
+- Documentar minha evolução como desenvolvedor
+- Criar uma base para apresentar futuros projetosApresentar de forma clara e direta minhas habilidades e projetos, com foco na simplicidade e eficiência.
+- Desenvolver habilidades práticas em desenvolvimento web
+- Estabelecer presença profissional online
 
-Apresentar de forma profissional minhas habilidades técnicas e projetos desenvolvidos, demonstrando minha experiência com diferentes tecnologias e metodologias ágeis.
-
-## 📫 Contato
+## 📫 Contato.com/JV-L0pes
 
 - GitHub: [@JV-L0pes](https://github.com/JV-L0pes)
 - Email: joaovlr9@gmail.com
-
+<div align="center">
 ---
 <div align="center">
-  João Victor Lopes Rosa © 2025
-</div>
+  João Victor Lopes Rosa © 2025</div>
