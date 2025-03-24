@@ -1,5 +1,5 @@
 # João Victor Lopes Rosa - Portfolio
-📍 <a href="https://jv-l0pes.github.io" target="_blank" rel="noopener noreferrer">Acesse meu portfolio</a>{:target="_blank" rel="noopener noreferrer"}
+📍 <a href="https://jv-l0pes.github.io" target="_blank" rel="noopener noreferrer">Acesse meu portfolio</a>
 
 <div align="center">
   <img src="./img/199923034.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
