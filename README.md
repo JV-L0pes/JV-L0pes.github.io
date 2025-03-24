@@ -1,4 +1,5 @@
 # João Victor Lopes Rosa - Portfolio
+📍 [Acesse meu portfolio](https://jv-l0pes.github.io)
 
 <div align="center">
   <img src="./img/199923034.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
