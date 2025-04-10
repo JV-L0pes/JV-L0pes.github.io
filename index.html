@@ -3,107 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio João Victor Lopes Rosa</title>
+    <title>João Victor Lopes Rosa | Desenvolvedor</title>
     <link rel="stylesheet" href="css/styles.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <!-- DevIcon Fonts -->
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
-    <main id="container">
-      <aside id="bio-container">
-        <h2>João Victor Lopes Rosa</h2>
-        <img id="bio-image" src="img/199923034.jpg" alt="Foto de perfil" />
-        <p>
-          <span class="highlight">Desenvolvedor Full Stack</span> focado em
-          soluções web modernas e escaláveis.
-        </p>
-        <p id="welcome-text">
-          Bem-vindo ao meu portfólio.
-        </p>
-        <ul id="social-container">
-          <li>
-            <a href="https://github.com/JV-L0pes" target="_blank"
-              ><ion-icon name="logo-github"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"
-              ><ion-icon name="logo-linkedin"></ion-icon
-            ></a>
-          </li>
-        </ul>
-        <div id="email-container">
-          <ion-icon name="mail-outline"></ion-icon
-          ><a href="mailto:joaovlr9@gmail.com">joaovlr9@gmail.com</a>
-          <p></p>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#home">JV<span>Lopes</span></a>
         </div>
-      </aside>
-      <section id="about-container">
-        <h1 id="name">João Victor Lopes Rosa</h1>
-        <p id="title">
-          <span class="highlight">Desenvolvedor Full Stack</span>
-        </p>
-        <p class="description">
-          Graduando em <span class="highlight">Desenvolvimento de Software Multiplataforma</span> 
-          pela FATEC Jacareí. Aplico <span class="highlight">metodologias ágeis</span> no 
-          desenvolvimento de soluções web eficientes. Comprometido com boas práticas de 
-          programação e código limpo.
-        </p>
-        <a href="https://github.com/JV-L0pes" id="btn-projects"
-          ><ion-icon name="share-social-outline"></ion-icon
-          ><span>Acessar projetos</span></a
-        >
-        <h2 id="skills-section-title">Competências Técnicas</h2>
-        <p class="description">Tecnologias e ferramentas:</p>
-        <div id="skills-container">
-          <div class="skills-box">
-            <p class="skills-title">Desenvolvimento Frontend</p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a href="#home" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about" role="menuitem">Sobre</a></li>
+          <li role="none"><a href="#skills" role="menuitem">Habilidades</a></li>
+          <li role="none"><a href="#projects" role="menuitem">Projetos</a></li>
+          <li role="none"><a href="#contact" role="menuitem">Contato</a></li>
+        </ul>
+        <div class="menu-btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-content" data-aos="fade-right">
+          <h1>Olá, eu sou <span class="highlight">João Victor</span></h1>
+          <h2>Desenvolvedor em Formação</h2>
+          <p class="typing-text">Estudante de Desenvolvimento de Software Multiplataforma</p>
+        </div>
+        <div class="hero-image">
+          <img src="img/199923034.jpg" alt="João Victor Lopes" class="profile-img" onerror="this.src='https://via.placeholder.com/400x400?text=JV+Lopes'">
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Sobre Mim</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <p>Sou estudante de <span class="highlight">Desenvolvimento de Software Multiplataforma</span> na FATEC Jacareí, buscando oportunidades para aplicar e expandir meus conhecimentos em desenvolvimento web.</p>
+            <p>Com foco em <span class="highlight">programação web</span>, estou constantemente aprendendo e me desenvolvendo para criar soluções inovadoras e eficientes.</p>
+            <p>Comprometido com as melhores práticas de programação e sempre em busca de novos desafios para crescer profissionalmente.</p>
           </div>
-          <div class="skills-box">
-            <p class="skills-title">Desenvolvimento Backend</p>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-python-plain colored"></i>
+          <div class="about-stats" data-aos="fade-left">
+            <div class="stat-item">
+              <h3>FATEC</h3>
+              <p>Formação</p>
+            </div>
+            <div class="stat-item">
+              <h3>DSM</h3>
+              <p>Curso</p>
+            </div>
+            <div class="stat-item">
+              <h3>2025</h3>
+              <p>Início</p>
+            </div>
           </div>
-          <div class="skills-box">
-            <p class="skills-title">Banco de Dados</p>
-            <i class="devicon-postgresql-plain colored"></i>
-            <i class="devicon-mongodb-plain colored"></i>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Habilidades</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <h3>Frontend</h3>
+            <div class="skills-container">
+              <div class="skill-item">
+                <ion-icon name="logo-html5"></ion-icon>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <ion-icon name="logo-css3"></ion-icon>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <ion-icon name="logo-javascript"></ion-icon>
+                <span>JavaScript</span>
+              </div>
+            </div>
           </div>
-          <div class="skills-box">
-            <p class="skills-title">Frameworks & Bibliotecas</p>
-            <i class="devicon-react-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <h3>Backend</h3>
+            <div class="skills-container">
+              <div class="skill-item">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <ion-icon name="logo-python"></ion-icon>
+                <span>Python</span>
+              </div>
+            </div>
           </div>
-          <div class="skills-box">
-            <p class="skills-title">Ambiente & DevOps</p>
-            <i class="devicon-linux-plain colored"></i>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <h3>Database</h3>
+            <div class="skills-container">
+              <div class="skill-item">
+                <ion-icon name="server-outline"></ion-icon>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <ion-icon name="cloud-outline"></ion-icon>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Projetos</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-info">
+              <h3>Portfólio JV-L0pes</h3>
+              <p>Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript.</p>
+              <div class="project-links">
+                <a href="https://github.com/JV-L0pes/JV-L0pes.github.io" class="btn primary-btn" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/JV-L0pes/JV-L0pes.github.io" class="btn secondary-btn" target="_blank">Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-info">
+              <h3>Burndown Chart</h3>
+              <p>Dashboard de Burndown Chart integrado com Trello.</p>
+              <div class="project-links">
+                <a href="https://github.com/JV-L0pes/burndown-chart" class="btn primary-btn" target="_blank">Ver Projeto</a>
+                <a href="https://github.com/JV-L0pes/burndown-chart" class="btn secondary-btn" target="_blank">Código</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Contato</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:joaovlr.contact@gmail.com">joaovlr.contact@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <ion-icon name="logo-github"></ion-icon>
+              <a href="https://github.com/JV-L0pes" target="_blank">JV-L0pes</a>
+            </div>
+            <div class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <a href="#">Jacareí, SP</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 João Victor Lopes Rosa. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
