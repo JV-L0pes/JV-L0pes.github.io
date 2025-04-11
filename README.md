@@ -24,7 +24,8 @@ Portfolio em desenvolvimento que representa minha jornada inicial como desenvolv
 
 ## 🎯 Objetivos
 - Documentar minha evolução como desenvolvedor
-- Criar uma base para apresentar futuros projetos. Apresentar de forma clara e direta minhas habilidades e projetos, com foco na simplicidade e eficiência.
+- Criar uma base para apresentar futuros projetos.
+- Apresentar de forma clara e direta minhas habilidades e projetos, com foco na simplicidade e eficiência.
 - Desenvolver habilidades práticas em desenvolvimento web
 - Estabelecer presença profissional online
 
