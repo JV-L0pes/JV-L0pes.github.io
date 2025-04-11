@@ -37,3 +37,4 @@ Portfolio em desenvolvimento que representa minha jornada inicial como desenvolv
 ---
 <div align="center">
   João Victor Lopes Rosa © 2025</div>
+
