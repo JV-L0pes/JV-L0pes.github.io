@@ -1,5 +1,5 @@
-# João Victor Lopes Rosa - Portfolio
-📍 <a href="https://jv-l0pes.github.io" target="_blank" rel="noopener noreferrer">Acesse meu portfolio</a>
+# João Victor Lopes Rosa - Portfólio
+📍 <a href="https://jv-l0pes.github.io" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
 
 <div align="center">
   <img src="./img/199923034.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
@@ -24,7 +24,8 @@ Portfolio em desenvolvimento que representa minha jornada inicial como desenvolv
 
 ## 🎯 Objetivos
 - Documentar minha evolução como desenvolvedor
-- Criar uma base para apresentar futuros projetosApresentar de forma clara e direta minhas habilidades e projetos, com foco na simplicidade e eficiência.
+- Criar uma base para apresentar futuros projetos.
+- Apresentar de forma clara e direta minhas habilidades e projetos, com foco na simplicidade e eficiência.
 - Desenvolver habilidades práticas em desenvolvimento web
 - Estabelecer presença profissional online
 
