@@ -283,6 +283,9 @@ body {
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
   box-shadow: var(--shadow-secondary);
+  padding: 0.84rem 2rem; /* Micro ajuste no padding vertical */
+  font-size: 0.975rem;  /* Micro ajuste no tamanho da fonte */
+  line-height: 1.5;     /* Ajustando a altura da linha */
 }
 
 .secondary-btn:hover {
@@ -615,24 +618,33 @@ section::before {
 
 /* Contact Section */
 .contact-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 4rem;
+  display: flex; /* Usando flexbox para centralizar */
+  justify-content: center; /* Centralizando horizontalmente */
+  align-items: center; /* Centralizando verticalmente */
+  gap: 1.5rem; /* Espaçamento entre os cartões */
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: flex; /* Alterando para flexbox */
+  flex-direction: row; /* Alinhando os itens em linha */
+  justify-content: center; /* Centralizando os cartões horizontalmente */
+  margin: 0 auto; /* Garantindo que o container esteja centralizado */
+  align-items: center; /* Alinhando verticalmente */
+  gap: 1rem; /* Reduzindo o espaçamento entre os botões */
 }
 
 .contact-item {
-  display: flex;
-  align-items: center;
+  flex: 1; /* Garantindo que os itens ocupem espaço proporcional */
+  width: 244.987px; /* Ajustando a largura para igualar ao botão de email */
+  max-width: none; /* Removendo limite de largura */
+  padding: 1.5rem; /* Mantendo o padding uniforme */
+  text-align: center; /* Centralizando o conteúdo */
+  display: flex; /* Usando flexbox para alinhar o conteúdo */
+  flex-direction: column; /* Alinhando o conteúdo verticalmente */
+  justify-content: center; /* Centralizando verticalmente */
+  align-items: center; /* Centralizando horizontalmente */
+  height: 100%; /* Garantindo altura consistente */
   gap: 1.2rem;
-  padding: 1rem;
   background: var(--card-bg);
   border-radius: 0.8rem;
   transition: var(--transition);

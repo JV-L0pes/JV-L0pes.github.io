@@ -100,16 +100,18 @@ document.querySelectorAll('section').forEach(section => {
 // Formulário de Contato
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  
-  // Aqui você pode adicionar a lógica para enviar o formulário
-  // Por exemplo, usando fetch para enviar para um backend
-  
-  // Por enquanto, apenas mostra uma mensagem de sucesso
-  alert('Mensagem enviada com sucesso!');
-  contactForm.reset();
-});
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Aqui você pode adicionar a lógica para enviar o formulário
+    // Por exemplo, usando fetch para enviar para um backend
+    
+    // Por enquanto, apenas mostra uma mensagem de sucesso
+    alert('Mensagem enviada com sucesso!');
+    contactForm.reset();
+  });
+}
 
 // Efeito Parallax no Hero
 const heroSection = document.querySelector('.hero-section');
@@ -140,4 +142,18 @@ const animateOnScroll = () => {
 };
 
 window.addEventListener('scroll', animateOnScroll);
-window.addEventListener('load', animateOnScroll); 
+window.addEventListener('load', animateOnScroll);
+
+// Animações com GSAP
+window.onload = function() {
+  gsap.from('.hero-content h1', { duration: 1, y: -50, opacity: 0, ease: 'power2.out' });
+  gsap.from('.hero-content h2', { duration: 1, y: 50, opacity: 0, ease: 'power2.out', delay: 0.5 });
+  gsap.from('.hero-image img', { duration: 1, scale: 0.8, opacity: 0, ease: 'power2.out', delay: 1 });
+};
+
+// Aprimorar o uso do AOS
+AOS.init({
+  duration: 1200,
+  once: true,
+  mirror: false
+});
