@@ -59,7 +59,10 @@ window.addEventListener('scroll', () => {
 
 // Typing Effect
 const typingText = document.querySelector('.typing-text');
-const words = ['Desenvolvedor em Formação', 'Estudante de DSM', 'Apaixonado por Tecnologia'];
+const words =
+  document.documentElement.lang === 'en'
+    ? ['Developer in Training', 'Multiplatform Software Development Student', 'Passionate about Technology']
+    : ['Desenvolvedor em Formação', 'Estudante de DSM', 'Apaixonado por Tecnologia'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -214,3 +217,22 @@ AOS.init({
   mirror: false,
   disable: window.innerWidth < 768 ? 'phone' : false // Desabilitar em telefones para melhor performance
 });
+
+// Fechar dropdown de idiomas ao clicar fora
+const langDropdown = document.querySelector('.language-dropdown');
+if (langDropdown) {
+  document.addEventListener('click', (e) => {
+    if (!langDropdown.contains(e.target)) {
+      langDropdown.classList.remove('open');
+      const menu = langDropdown.querySelector('.language-menu');
+      if (menu) menu.style.display = 'none';
+    }
+  });
+  langDropdown.querySelector('.language-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const menu = langDropdown.querySelector('.language-menu');
+    if (menu) {
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+}
