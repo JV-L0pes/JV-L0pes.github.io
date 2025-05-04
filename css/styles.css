@@ -1093,3 +1093,429 @@ section::before {
     padding: 0.5rem;
   }
 }
+
+/* Soft Skills */
+.soft-skills {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 51, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.soft-skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 0;
+}
+
+.soft-skills:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-primary);
+}
+
+.soft-skills:hover::before {
+  opacity: 0.05;
+}
+
+.soft-skills h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.soft-skills h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--gradient-primary);
+}
+
+.soft-skills .skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.soft-skills .skill-item {
+  background: var(--background);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 0, 51, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.soft-skills .skill-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 0;
+}
+
+.soft-skills .skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-primary);
+}
+
+.soft-skills .skill-item:hover::before {
+  opacity: 0.05;
+}
+
+.soft-skills .skill-item ion-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.soft-skills .skill-item:hover ion-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px var(--primary-color));
+}
+
+.soft-skills .skill-item span {
+  color: var(--text-color);
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+/* Certificações */
+.certifications-section {
+  padding: 6rem 2rem;
+  background: var(--section-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(255, 0, 51, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(102, 0, 102, 0.05) 0%, transparent 50%);
+  z-index: 0;
+  animation: gradientShift 15s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+.certification-card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 51, 0.1);
+}
+
+.certification-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 0;
+}
+
+.certification-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-primary);
+}
+
+.certification-card:hover::before {
+  opacity: 0.05;
+}
+
+.certification-info {
+  position: relative;
+  z-index: 1;
+}
+
+.certification-info h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.certification-info h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  transition: var(--transition);
+}
+
+.certification-card:hover h3::after {
+  width: 100px;
+}
+
+.certification-info p {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.certification-info .btn,
+.certification-info .secondary-btn {
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+}
+
+.certification-info .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.certification-info .btn:active {
+  transform: translateY(-2px);
+}
+
+.certification-info .btn::before,
+.certification-info .btn::after {
+  display: none !important;
+}
+
+.certification-info .secondary-btn {
+  background: var(--gradient-primary);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.certification-info .secondary-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Educação */
+.education-section {
+  padding: 6rem 2rem;
+  background: var(--background);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 51, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(102, 0, 102, 0.05) 0%, transparent 50%);
+  z-index: 0;
+  animation: gradientShift 15s ease-in-out infinite reverse;
+}
+
+.education-content {
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.education-item {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 51, 0.1);
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition);
+  z-index: 0;
+}
+
+.education-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-primary);
+}
+
+.education-item:hover::before {
+  opacity: 0.05;
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.education-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  transition: var(--transition);
+}
+
+.education-item:hover h3::after {
+  width: 100px;
+}
+
+.education-item p {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Media Queries para as novas seções */
+@media (max-width: 768px) {
+  .certifications-grid,
+  .education-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .soft-skills {
+    padding: 1.5rem;
+  }
+
+  .soft-skills h3 {
+    font-size: 1.5rem;
+  }
+
+  .soft-skills .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .certification-card,
+  .education-item {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-card,
+  .education-item {
+    padding: 1.2rem;
+  }
+
+  .certification-info h3,
+  .education-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .soft-skills .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .soft-skills .skill-item {
+    padding: 1.2rem;
+  }
+
+  .soft-skills .skill-item ion-icon {
+    font-size: 2rem;
+  }
+}
