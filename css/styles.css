@@ -1052,6 +1052,8 @@ section::before {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--card-bg);
   border-radius: 10px;
   padding: 1.5rem;
@@ -1064,6 +1066,12 @@ section::before {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.project-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .project-info h3 {
   margin-bottom: 0.5rem;
   color: var(--primary-color);
@@ -1072,6 +1080,10 @@ section::before {
 .project-info p {
   color: var(--light-text);
   margin-bottom: 1rem;
+}
+
+.project-links {
+  margin-top: auto;
 }
 
 .project-links .btn {
