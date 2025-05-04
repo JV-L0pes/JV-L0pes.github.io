@@ -1266,6 +1266,8 @@ section::before {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 0, 51, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
 .certification-card::before {
@@ -1291,8 +1293,10 @@ section::before {
 }
 
 .certification-info {
-  position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
 }
 
 .certification-info h3 {
@@ -1328,8 +1332,7 @@ section::before {
 
 .certification-info .btn,
 .certification-info .secondary-btn {
-  padding: 0.6rem 1.3rem;
-  font-size: 1rem;
+  margin-top: auto;
 }
 
 .certification-info .btn:hover {
