@@ -363,9 +363,16 @@ body {
   background-clip: content-box, border-box;
 }
 
+.hero-image img.profile-img {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   background-image: linear-gradient(var(--background), var(--background)), var(--gradient-primary);
@@ -1731,4 +1738,477 @@ section::before {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+/* Ajustes Mobile - Menu e Navegação */
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links {
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .language-dropdown {
+    position: static;
+  }
+
+  .language-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    width: 200px;
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 0, 51, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .language-menu a {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Ajustes Mobile - Hero Section */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 6rem;
+    gap: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .typing-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons {
+    gap: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Ajustes Mobile - Cards e Seções */
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .project-card,
+  .certification-card,
+  .education-item {
+    padding: 1.2rem;
+  }
+
+  .project-info h3,
+  .certification-info h3,
+  .education-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .project-links .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Ajustes Mobile - Skills e Soft Skills */
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 1.2rem;
+  }
+
+  .skill-category {
+    padding: 1.2rem;
+  }
+
+  .skill-item i {
+    font-size: 2.5rem;
+  }
+
+  .soft-skills {
+    padding: 1.2rem;
+  }
+
+  .soft-skills h3 {
+    font-size: 1.4rem;
+  }
+
+  .soft-skills .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .soft-skills .skill-item {
+    padding: 1rem;
+  }
+
+  .soft-skills .skill-item ion-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Ajustes Mobile - Contato */
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 0;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-item {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Ajustes Mobile - Telas Muito Pequenas */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .typing-text {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .soft-skills .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajustes Mobile - Orientação Landscape */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero-section {
+    min-height: auto;
+    padding: 6rem 1rem 2rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nav-links {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
+/* Melhorias para Touch */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .nav-links a,
+  .contact-item a,
+  .project-links a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-item,
+  .soft-skills .skill-item {
+    padding: 0.8rem;
+  }
+
+  .language-menu a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Menu Mobile e Dropdown */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin-left: 1rem;
+  }
+
+  .menu-btn ion-icon {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(13, 13, 13, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .language-dropdown {
+    margin-top: auto;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 0, 51, 0.1);
+  }
+
+  .language-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--card-bg);
+    border-top: 1px solid rgba(255, 0, 51, 0.1);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    padding: 1rem 0;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .language-dropdown.active .language-menu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .language-menu a {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media (max-width: 480px) {
+  .nav-content {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-btn ion-icon {
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
+    top: 62px;
+    height: calc(100vh - 62px);
+  }
+}
+
+/* Ajustes Finais Mobile */
+@media (max-width: 768px) {
+  /* Prevenir scroll horizontal */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Melhorar legibilidade */
+  p, li, .typing-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Ajustar espaçamentos */
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-header h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* Melhorar cards */
+  .project-card,
+  .certification-card,
+  .education-item,
+  .skill-category,
+  .soft-skills .skill-item {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Ajustar grid de projetos */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  /* Melhorar formulário de contato */
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevenir zoom em iOS */
+  }
+
+  /* Ajustar botões */
+  .btn,
+  .secondary-btn,
+  .primary-btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Melhorar navegação */
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+
+  /* Ajustar dropdown de idiomas */
+  .language-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+
+/* Ajustes para Telas Muito Pequenas */
+@media (max-width: 480px) {
+  /* Reduzir tamanhos de fonte */
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.3rem; }
+  p, li { font-size: 0.95rem; }
+
+  /* Ajustar espaçamentos */
+  section {
+    padding: 3rem 1rem;
+  }
+
+  /* Melhorar cards */
+  .project-card,
+  .certification-card,
+  .education-item {
+    padding: 1rem;
+  }
+
+  /* Ajustar grid de skills */
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Melhorar botões */
+  .btn,
+  .secondary-btn,
+  .primary-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajustes para Orientação Landscape */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero-section {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .nav-links {
+    padding: 1rem 0;
+  }
+
+  .nav-links a {
+    padding: 0.8rem 2rem;
+  }
+
+  .language-dropdown {
+    padding: 0.5rem 0;
+  }
 }
