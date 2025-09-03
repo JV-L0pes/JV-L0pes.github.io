@@ -1,0 +1,17 @@
+{
+  "nav": {"home":"Home","about":"Sobre","skills":"Habilidades","certifications":"Certificações","education":"Formação","projects":"Projetos","contact":"Contato"},
+  "hero": {"hello":"Olá, eu sou","role":"Desenvolvedor em Formação","typing":["Desenvolvedor em Formação","Estudante de DSM","Apaixonado por Tecnologia"]},
+  "about": {
+    "title":"Sobre Mim",
+    "p1":"Sou estudante de Desenvolvimento de Software Multiplataforma na FATEC Jacareí, com foco em desenvolvimento web, mobile e software multiplataforma.",
+    "p2":"Inglês Avançado — Comunicação, leitura e escrita em nível avançado, próximo da fluência.",
+    "p3":"Comprometido com o aprimoramento contínuo e com a entrega de soluções criativas e eficazes.",
+    "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"DSM","p":"2025-2027"},{"h":"Inglês","p":"Avançado"}]
+  },
+  "skills": {"title":"Habilidades","frontend":"Frontend","backend":"Backend","tools":"Ferramentas","soft":"Habilidades Comportamentais","softItems":["Comunicação eficaz","Gestão do tempo","Trabalho em equipe","Resolução de problemas"]},
+  "certifications": {"title":"Certificações"},
+  "education": {"title":"Formação Acadêmica"},
+  "projects": {"title":"Projetos"},
+  "contact": {"title":"Contato","email":"E-mail","github":"GitHub","linkedin":"LinkedIn","whatsapp":"WhatsApp","send":"Enviar mensagem"},
+  "footer": {"made":"Feito com React, Tailwind e amor por código."}
+}

@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+/* Fundo com radiais sutis para preservar o visual do projeto original */
+body {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 0, 51, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(102, 0, 102, 0.05) 0%, transparent 20%);
+  background-attachment: fixed;
+}
+
+/***** Utilitários *****/
+.container-max { @apply max-w-[1200px] mx-auto px-4; }
+.card {
+  @apply bg-card/100 border border-border rounded-xl shadow-md shadow-black/40 transition-transform;
+}
+.card-hover { @apply hover:-translate-y-1.5 hover:shadow-xl; }
+.btn { @apply inline-flex items-center justify-center font-semibold rounded-md px-5 py-3 transition-transform; }
+.btn-primary { @apply text-white; background-image: linear-gradient(135deg,#ff3366,#9933ff); }
+.btn-primary:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 12px 24px rgba(255,51,102,.18),0 2px 8px rgba(0,0,0,.12); }
+.btn-outline { @apply border border-accent text-accent; box-shadow: 0 0 20px rgba(153,51,255,.3); }
+.btn-outline:hover { @apply text-white; background-image: linear-gradient(135deg,#ff3366,#9933ff); transform: translateY(-2px) scale(1.03); }
+.section { @apply py-24 relative overflow-hidden; }
+.section-title { @apply text-4xl font-bold inline-block; }
+.section-underline { @apply block h-1 w-20 mt-3; background-image: linear-gradient(135deg,#ff3366,#9933ff); }
+
+/* Navbar sticky com blur */
+.nav-blur { @apply fixed top-0 left-0 w-full z-50 backdrop-blur border-b border-[rgba(255,0,51,0.1)] bg-[rgba(10,10,10,0.85)]; }
+
+/* Avatar gradient ring */
+.avatar-ring { background-image: linear-gradient(#0d0d0d,#0d0d0d), linear-gradient(135deg,#ff3366,#9933ff); background-clip: content-box,border-box; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }

@@ -1,0 +1,17 @@
+{
+  "nav": {"home":"Home","about":"About","skills":"Skills","certifications":"Certifications","education":"Education","projects":"Projects","contact":"Contact"},
+  "hero": {"hello":"Hello, I'm","role":"Developer in Training","typing":["Developer in Training","Multiplatform Software Development Student","Passionate about Technology"]},
+  "about": {
+    "title":"About Me",
+    "p1":"I am a Multiplatform Software Development student at FATEC Jacareí, focused on web, mobile and cross-platform.",
+    "p2":"Advanced English — advanced communication, reading and writing, near fluency.",
+    "p3":"Committed to continuous improvement and delivering creative, effective solutions.",
+    "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"MSD","p":"2025-2027"},{"h":"English","p":"Advanced"}]
+  },
+  "skills": {"title":"Skills","frontend":"Frontend","backend":"Backend","tools":"Tools","soft":"Soft Skills","softItems":["Effective communication","Time management","Teamwork","Problem solving"]},
+  "certifications": {"title":"Certifications"},
+  "education": {"title":"Education"},
+  "projects": {"title":"Projects"},
+  "contact": {"title":"Contact","email":"Email","github":"GitHub","linkedin":"LinkedIn","whatsapp":"WhatsApp","send":"Send message"},
+  "footer": {"made":"Built with React, Tailwind and a love for code."}
+}
