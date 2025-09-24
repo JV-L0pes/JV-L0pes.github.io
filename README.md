@@ -1,5 +1,5 @@
 # João Victor Lopes Rosa - Portfólio
-📍 <a href="#" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
+📍 <a href="https://jv-l0pes.github.io" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
 
 <div align="center">
   <img src="./img/pfp.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
@@ -7,33 +7,92 @@
 
 ## 🚀 Sobre o Projeto
 
-Portfolio em desenvolvimento que representa minha jornada inicial como desenvolvedor. Um projeto simples e funcional que crescerá junto com minhas habilidades e experiências.
+Portfólio moderno desenvolvido com React e TypeScript, representando minha evolução como desenvolvedor. Um projeto robusto e escalável que demonstra habilidades em tecnologias atuais do mercado.
 
 ### 💻 Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript Vanilla
+**Frontend:**
+- React 18.3.1
+- TypeScript 5.5.4
+- Vite 5.4.3 (Build Tool)
+- Tailwind CSS 3.4.10
+- Framer Motion 11.0.0 (Animações)
+
+**Internacionalização:**
+- i18next 23.10.0
+- react-i18next 13.5.0
+
+**Desenvolvimento:**
+- ESLint (Linting)
+- PostCSS + Autoprefixer
+- Hot Module Replacement (HMR)
 
 ### ⚡ Características
 
-- Design limpo e minimalista
-- Estrutura preparada para adicionar novos projetos
-- Código organizado e comentado
-- Base sólida para expansão futura
+- **Design Moderno**: Interface dark theme com gradientes e efeitos glow
+- **Responsivo**: Adaptável a todos os dispositivos
+- **Internacionalização**: Suporte a Português e Inglês
+- **Animações Suaves**: Transições e micro-interações com Framer Motion
+- **Performance**: Build otimizado com Vite
+- **Type Safety**: Desenvolvido com TypeScript
+- **Componentização**: Arquitetura modular e reutilizável
 
 ## 🎯 Objetivos
-- Documentar minha evolução como desenvolvedor
-- Criar uma base para apresentar futuros projetos.
-- Apresentar de forma clara e direta minhas habilidades e projetos, com foco na simplicidade e eficiência.
-- Desenvolver habilidades práticas em desenvolvimento web
-- Estabelecer presença profissional online
+- Demonstrar proficiência em tecnologias modernas (React, TypeScript, Vite)
+- Criar uma base escalável para apresentar projetos futuros
+- Apresentar habilidades técnicas de forma profissional e interativa
+- Desenvolver experiência prática com ferramentas de desenvolvimento atuais
+- Estabelecer presença profissional online com portfólio de alta qualidade
 
-## 📫 Contato.com/JV-L0pes
+## 🚀 Como Executar
 
-- GitHub: [@JV-L0pes](https://github.com/JV-L0pes)
-- Email: joaovlr9@gmail.com
-<div align="center">
+```bash
+# Instalar dependências
+npm install
+
+# Executar em modo desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
+```
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/          # Componentes React
+│   ├── About.tsx
+│   ├── Certifications.tsx
+│   ├── Contact.tsx
+│   ├── Education.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navbar.tsx
+│   ├── Projects.tsx
+│   ├── SectionHeader.tsx
+│   └── Skills.tsx
+├── shared/             # Recursos compartilhados
+│   ├── i18n.ts        # Configuração de internacionalização
+│   └── locales/       # Traduções
+│       ├── en.json
+│       └── pt.json
+├── App.tsx            # Componente principal
+├── main.tsx          # Ponto de entrada
+└── styles.css        # Estilos globais
+```
+
+## 📫 Contato
+
+- 🌐 **Portfólio**: [jv-l0pes.github.io](https://jv-l0pes.github.io)
+- 💻 **GitHub**: [@JV-L0pes](https://github.com/JV-L0pes)
+- 📧 **Email**: joaovlr9@gmail.com
+
 ---
+
 <div align="center">
-  João Victor Lopes Rosa © 2025</div>
+  <strong>João Victor Lopes Rosa © 2025</strong>
+</div>
