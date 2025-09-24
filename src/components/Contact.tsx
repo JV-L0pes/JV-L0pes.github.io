@@ -3,27 +3,27 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 
 const contactItems = [
-  { 
-    label: 'E-mail', 
-    href: 'mailto:joaovictorlopesr10@gmail.com',
-    icon: 'https://img.icons8.com/color/48/000000/gmail-new.png'
-  },
-  { 
-    label: 'GitHub', 
-    href: 'https://github.com/JV-L0pes',
-    icon: 'https://img.icons8.com/color/48/000000/github.png'
-  },
-  { 
-    label: 'LinkedIn', 
-    href: 'https://www.linkedin.com/in/joaovictorlopesrosa',
-    icon: 'https://img.icons8.com/color/48/000000/linkedin.png'
-  },
-  { 
-    label: 'WhatsApp', 
-    href: 'https://wa.me/5512983003034',
-    icon: 'https://img.icons8.com/color/48/000000/whatsapp.png'
-  }
-]
+      {
+        label: 'E-mail',
+        href: 'mailto:joaovlr9@gmail.com',
+        icon: 'https://img.icons8.com/color/48/000000/gmail-new.png'
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/JV-L0pes',
+        icon: 'https://img.icons8.com/color/48/000000/github.png'
+      },
+      {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/jv-l0pes',
+        icon: 'https://img.icons8.com/color/48/000000/linkedin.png'
+      },
+      {
+        label: 'WhatsApp',
+        href: 'https://wa.me/5512992278428',
+        icon: 'https://img.icons8.com/color/48/000000/whatsapp.png'
+      }
+    ]
 
 export default function Contact(){
   const { t } = useTranslation()

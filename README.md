@@ -99,6 +99,8 @@ Este projeto está hospedado no **Render** com deploy automático:
 - 🌐 **Portfólio**: [jv-l0pes-portfolio.onrender.com](https://jv-l0pes-portfolio.onrender.com)
 - 💻 **GitHub**: [@JV-L0pes](https://github.com/JV-L0pes)
 - 📧 **Email**: joaovlr9@gmail.com
+- 💼 **LinkedIn**: [linkedin.com/in/jv-l0pes](https://www.linkedin.com/in/jv-l0pes)
+- 📱 **WhatsApp**: [12 992278428](https://wa.me/5512992278428)
 
 ---
 

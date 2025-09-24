@@ -40,22 +40,23 @@ const experiences: Experience[] = [
       'Elaboração de documentação técnica detalhada'
     ]
   },
-  {
-    title: 'Scrum Master & Desenvolvedor FullStack',
-    company: 'ExceptionH4ndlers - Sistema Multi-Banco de Dados',
-    period: '2024 - 2025',
-    description: 'Desenvolvimento de sistema complexo com múltiplos bancos de dados (Furnas, Balcar, SIMA) utilizando arquitetura de microserviços. Projeto acadêmico da FATEC Jacareí com React + TypeScript frontend e Node.js + PostgreSQL backend, containerizado com Docker.',
-    technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Docker', 'SCRUM', 'CI/CD'],
-    achievements: [
-      'Coordenação de equipe de 5 desenvolvedores como Scrum Master',
-      'Arquitetura de sistema com múltiplos bancos de dados independentes',
-      'Implementação de CI/CD com GitHub Actions',
-      'Containerização completa com Docker Compose',
-      'Desenvolvimento de API RESTful com Node.js + TypeScript',
-      'Interface React responsiva com styled-components',
-      'Metodologia Scrum com Product Backlog e Sprints estruturados'
-    ]
-  }
+      {
+        title: 'Scrum Master & Desenvolvedor FullStack',
+        company: 'ExceptionH4ndlers - Sistema Multi-Banco de Dados',
+        period: '2024 - 2025',
+        description: 'Desenvolvimento de sistema complexo para análise de dados limnológicos com múltiplos bancos de dados (Furnas, Balcar, SIMA). Projeto acadêmico da FATEC Jacareí com arquitetura de microserviços, React + TypeScript frontend e Node.js + PostgreSQL backend, totalmente containerizado com Docker.',
+        technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Docker', 'SCRUM', 'CI/CD', 'GitHub Actions'],
+        achievements: [
+          'Coordenação de equipe de 5 desenvolvedores como Scrum Master',
+          'Arquitetura de sistema com múltiplos bancos de dados independentes para dados limnológicos',
+          'Implementação de CI/CD com GitHub Actions e pipeline automatizado',
+          'Containerização completa com Docker Compose (3 bancos PostgreSQL)',
+          'Desenvolvimento de API RESTful com Node.js + TypeScript',
+          'Interface React responsiva com styled-components e Vite',
+          'Metodologia Scrum com Product Backlog, Sprints e Burndown Charts',
+          'Estrutura organizada: front/, server/, múltiplos bancos de dados'
+        ]
+      }
 ]
 
 export default function Experience() {
