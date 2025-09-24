@@ -1,5 +1,5 @@
 # João Victor Lopes Rosa - Portfólio
-📍 <a href="https://jv-l0pes.github.io" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
+📍 <a href="https://jv-l0pes-portfolio.onrender.com" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
 
 <div align="center">
   <img src="./img/pfp.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
@@ -85,9 +85,18 @@ src/
 └── styles.css        # Estilos globais
 ```
 
+## 🚀 Deploy
+
+Este projeto está hospedado no **Render** com deploy automático:
+
+- 🌐 **URL**: [jv-l0pes-portfolio.onrender.com](https://jv-l0pes-portfolio.onrender.com)
+- 🔄 **Deploy**: Automático via GitHub
+- ⚙️ **Build**: `npm install && npm run build`
+- 📁 **Publish Directory**: `dist`
+
 ## 📫 Contato
 
-- 🌐 **Portfólio**: [jv-l0pes.github.io](https://jv-l0pes.github.io)
+- 🌐 **Portfólio**: [jv-l0pes-portfolio.onrender.com](https://jv-l0pes-portfolio.onrender.com)
 - 💻 **GitHub**: [@JV-L0pes](https://github.com/JV-L0pes)
 - 📧 **Email**: joaovlr9@gmail.com
 
