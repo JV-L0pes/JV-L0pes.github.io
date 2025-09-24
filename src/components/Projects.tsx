@@ -10,6 +10,12 @@ const projects = [
     title: 'Burndown Chart Generator',
     desc: 'App web para criação e visualização de burndown charts.',
     demo: 'https://github.com/JV-L0pes/burndown-chart', code: 'https://github.com/JV-L0pes/burndown-chart'
+  },
+  {
+    title: 'Sistema de Gestão de Horários Acadêmicos',
+    desc: 'Projeto ABP - FATEC Jacareí. Sistema web para otimizar gestão de horários acadêmicos, substituindo informes impressos por plataforma digital. Função: Scrum Master e Desenvolvedor Frontend.',
+    demo: 'https://github.com/ErrorSquad-ABP/Gerenciamento_Pedagogico-Documentacao', 
+    code: 'https://github.com/ErrorSquad-ABP/Gerenciamento_Pedagogico-Documentacao'
   }
 ]
 
