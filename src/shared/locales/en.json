@@ -8,10 +8,11 @@
     "p3":"Advanced English — advanced communication, reading and writing, near fluency.",
     "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"MSD","p":"2025-2027"},{"h":"AI & Automation","p":"Experience"}]
   },
+  "experience": {"title":"Professional Experience"},
   "skills": {"title":"Skills","frontend":"Frontend","backend":"Backend","ai_automation":"AI & Automation","tools":"Tools","soft":"Soft Skills","softItems":["Effective communication","Time management","Teamwork","Problem solving"]},
   "certifications": {"title":"Certifications"},
   "education": {"title":"Education"},
   "projects": {"title":"Projects"},
   "contact": {"title":"Contact","email":"Email","github":"GitHub","linkedin":"LinkedIn","whatsapp":"WhatsApp","send":"Send message"},
-  "footer": {"made":"Built with React, Tailwind and a love for code."}
+  "footer": {"made":"Made with love"}
 }

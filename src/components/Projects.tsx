@@ -1,4 +1,5 @@
 import SectionHeader from './SectionHeader'
+import { motion } from 'framer-motion'
 
 const projects = [
   {
@@ -61,35 +62,62 @@ export default function Projects(){
     <section id="projects" className="section">
       <div className="container-max">
         <SectionHeader title="Projetos" />
-        <div className="grid md:grid-cols-2 gap-6">
-          {projects.map(p => (
-            <div key={p.title} className="card card-hover p-6 flex flex-col">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-xl text-primary">{p.title}</h3>
-                {p.client && (
-                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">
-                    Projeto Real
-                  </span>
-                )}
-              </div>
-              <p className="text-muted mb-4">{p.desc}</p>
-              
-              <div className="mb-4">
-                <h4 className="text-primary font-semibold mb-2">Tecnologias:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {p.technologies.map((tech, idx) => (
-                    <span key={idx} className="bg-background px-3 py-1 rounded-full text-sm border border-[rgba(255,0,51,0.2)]">
-                      {tech}
-                    </span>
-                  ))}
+        <div className="grid lg:grid-cols-2 gap-8">
+          {projects.map((p, index) => (
+            <motion.div 
+              key={p.title} 
+              className="card card-hover p-8 flex flex-col group"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="space-y-6 flex-1">
+                {/* Header */}
+                <div className="flex justify-between items-start gap-4">
+                  <h3 className="text-2xl font-bold gradient-text">{p.title}</h3>
+                </div>
+                
+                {/* Description */}
+                <p className="text-lg text-muted leading-relaxed">{p.desc}</p>
+                
+                {/* Technologies */}
+                <div className="space-y-4">
+                  <h4 className="text-lg font-bold text-white flex items-center gap-2">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    Tecnologias
+                  </h4>
+                  <div className="flex flex-wrap gap-3">
+                    {p.technologies.map((tech, idx) => (
+                      <span 
+                        key={idx} 
+                        className="px-3 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 text-white hover:border-primary/40 transition-all duration-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
               
-              <div className="mt-auto flex gap-3">
-                <a className="btn btn-primary" target="_blank" href={p.demo}>Ver Projeto</a>
-                <a className="btn btn-outline" target="_blank" href={p.code}>Código</a>
+              {/* Actions */}
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <a 
+                  className="btn btn-primary flex-1 text-center" 
+                  target="_blank" 
+                  href={p.demo}
+                >
+                  Ver Projeto
+                </a>
+                <a 
+                  className="btn btn-outline flex-1 text-center" 
+                  target="_blank" 
+                  href={p.code}
+                >
+                  Código
+                </a>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

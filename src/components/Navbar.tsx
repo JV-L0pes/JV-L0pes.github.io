@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
 
-const links = ['home','about','skills','certifications','education','projects','contact'] as const
+const links = ['home','about','experience','skills','certifications','education','projects','contact'] as const
 
 export default function Navbar(){
   const { t, i18n } = useTranslation()

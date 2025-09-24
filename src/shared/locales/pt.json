@@ -6,12 +6,13 @@
     "p1":"Desenvolvedor FullStack focado em soluções web modernas e escaláveis. Apaixonado por tecnologia, inovação e aprendizado contínuo, com experiência crescente em Inteligência Artificial e automação com n8n.",
     "p2":"Busco sempre unir criatividade e lógica para entregar soluções eficientes, com foco em IA, web e mobile. Valorizo o trabalho em equipe, a comunicação clara e o impacto positivo da tecnologia na sociedade.",
     "p3":"Inglês Avançado — Comunicação, leitura e escrita em nível avançado, próximo da fluência.",
-    "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"DSM","p":"2025-2027"},{"h":"IA & Automação","p":"Experiência"}]
+    "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"DSM","p":"2025-2027"},{"h":"IA e Automação","p":"Experiência"}]
   },
+  "experience": {"title":"Experiências Profissionais"},
   "skills": {"title":"Habilidades","frontend":"Frontend","backend":"Backend","ai_automation":"IA & Automação","tools":"Ferramentas","soft":"Habilidades Comportamentais","softItems":["Comunicação eficaz","Gestão do tempo","Trabalho em equipe","Resolução de problemas"]},
   "certifications": {"title":"Certificações"},
   "education": {"title":"Formação Acadêmica"},
   "projects": {"title":"Projetos"},
   "contact": {"title":"Contato","email":"E-mail","github":"GitHub","linkedin":"LinkedIn","whatsapp":"WhatsApp","send":"Enviar mensagem"},
-  "footer": {"made":"Feito com React, Tailwind e amor por código."}
+  "footer": {"made":"Feito com amor"}
 }
