@@ -2,9 +2,10 @@ import SectionHeader from './SectionHeader'
 import { useTranslation } from 'react-i18next'
 
 const groups = [
-  { key: 'frontend', items: ['HTML5','CSS3','React','Next.js','TypeScript'] },
-  { key: 'backend', items: ['JavaScript','Node.js','Python','PostgreSQL','MySQL'] },
-  { key: 'tools',   items: ['Git/GitHub','VSCode/Cursor','SCRUM','Prisma','Tailwind CSS'] },
+  { key: 'frontend', items: ['HTML5','CSS3','React','Next.js','TypeScript','Tailwind CSS'] },
+  { key: 'backend', items: ['Python','JavaScript','Node.js','PostgreSQL','MySQL'] },
+  { key: 'ai_automation', items: ['Python','n8n','Machine Learning','Computer Vision','YOLO11','LLMs'] },
+  { key: 'tools',   items: ['Git/GitHub','VSCode/Cursor','SCRUM','Prisma','Docker','Linux'] },
 ]
 
 export default function Skills(){
@@ -13,7 +14,7 @@ export default function Skills(){
     <section id="skills" className="section">
       <div className="container-max">
         <SectionHeader title={t('skills.title')} />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {groups.map(g => (
             <div key={g.key} className="card card-hover p-6">
               <h3 className="text-primary text-xl mb-4 border-b border-[rgba(255,0,51,0.2)] pb-2">{t(`skills.${g.key}`)}</h3>

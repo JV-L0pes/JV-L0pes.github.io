@@ -1,14 +1,14 @@
 {
-  "nav": {"home":"Home","about":"About","skills":"Skills","certifications":"Certifications","education":"Education","projects":"Projects","contact":"Contact"},
-  "hero": {"hello":"Hello, I'm","role":"Developer in Training","typing":["Developer in Training","Multiplatform Software Development Student","Passionate about Technology"]},
+  "nav": {"home":"Home","about":"About","experience":"Experience","skills":"Skills","certifications":"Certifications","education":"Education","projects":"Projects","contact":"Contact"},
+  "hero": {"hello":"Hello, I'm","role":"FullStack Developer","typing":["FullStack Developer","AI and Automation Specialist","Python Developer","n8n Specialist"]},
   "about": {
     "title":"About Me",
-    "p1":"I am a Multiplatform Software Development student at FATEC Jacareí, focused on web, mobile and cross-platform.",
-    "p2":"Advanced English — advanced communication, reading and writing, near fluency.",
-    "p3":"Committed to continuous improvement and delivering creative, effective solutions.",
-    "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"MSD","p":"2025-2027"},{"h":"English","p":"Advanced"}]
+    "p1":"FullStack Developer focused on modern and scalable web solutions. Passionate about technology, innovation and continuous learning, with growing experience in Artificial Intelligence and automation with n8n.",
+    "p2":"I always seek to combine creativity and logic to deliver efficient solutions, focusing on AI, web and mobile. I value teamwork, clear communication and the positive impact of technology on society.",
+    "p3":"Advanced English — advanced communication, reading and writing, near fluency.",
+    "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"MSD","p":"2025-2027"},{"h":"AI & Automation","p":"Experience"}]
   },
-  "skills": {"title":"Skills","frontend":"Frontend","backend":"Backend","tools":"Tools","soft":"Soft Skills","softItems":["Effective communication","Time management","Teamwork","Problem solving"]},
+  "skills": {"title":"Skills","frontend":"Frontend","backend":"Backend","ai_automation":"AI & Automation","tools":"Tools","soft":"Soft Skills","softItems":["Effective communication","Time management","Teamwork","Problem solving"]},
   "certifications": {"title":"Certifications"},
   "education": {"title":"Education"},
   "projects": {"title":"Projects"},
