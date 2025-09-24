@@ -1,10 +1,10 @@
 {
   "nav": {"home":"Home","about":"About","experience":"Experience","skills":"Skills","certifications":"Certifications","education":"Education","projects":"Projects","contact":"Contact"},
-  "hero": {"hello":"Hello, I'm","role":"FullStack Developer","typing":["FullStack Developer","AI and Automation Specialist","Python Developer","n8n Specialist"]},
+  "hero": {"hello":"Hello, I'm","role":"FullStack Developer","typing":["FullStack Developer","Python Developer","React Developer","AI Intern","n8n Developer","Scrum Master"]},
   "about": {
     "title":"About Me",
-    "p1":"FullStack Developer focused on modern and scalable web solutions. Passionate about technology, innovation and continuous learning, with growing experience in Artificial Intelligence and automation with n8n.",
-    "p2":"I always seek to combine creativity and logic to deliver efficient solutions, focusing on AI, web and mobile. I value teamwork, clear communication and the positive impact of technology on society.",
+    "p1":"FullStack Developer in constant evolution, passionate about creating solutions that actually work. With practical experience in Python, React and automation with n8n during my internship at AllTech Digital.",
+    "p2":"I always seek to learn and apply new technologies in a practical way. I value teamwork, agile methodologies like Scrum, and developing solutions that positively impact people's daily lives.",
     "p3":"Advanced English — advanced communication, reading and writing, near fluency.",
     "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"MSD","p":"2025-2027"},{"h":"AI & Automation","p":"Experience"}]
   },

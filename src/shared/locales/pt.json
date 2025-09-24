@@ -1,10 +1,10 @@
 {
   "nav": {"home":"Home","about":"Sobre","experience":"Experiência","skills":"Habilidades","certifications":"Certificações","education":"Formação","projects":"Projetos","contact":"Contato"},
-  "hero": {"hello":"Olá, eu sou","role":"Desenvolvedor FullStack","typing":["Desenvolvedor FullStack","Especialista em IA e Automação","Desenvolvedor Python","Especialista em n8n"]},
+  "hero": {"hello":"Olá, eu sou","role":"Desenvolvedor FullStack","typing":["Desenvolvedor FullStack","Desenvolvedor Python","Desenvolvedor React","Desenvolvedor de IA","Desenvolvedor n8n","Scrum Master"]},
   "about": {
     "title":"Sobre Mim",
-    "p1":"Desenvolvedor FullStack focado em soluções web modernas e escaláveis. Apaixonado por tecnologia, inovação e aprendizado contínuo, com experiência crescente em Inteligência Artificial e automação com n8n.",
-    "p2":"Busco sempre unir criatividade e lógica para entregar soluções eficientes, com foco em IA, web e mobile. Valorizo o trabalho em equipe, a comunicação clara e o impacto positivo da tecnologia na sociedade.",
+    "p1":"Desenvolvedor FullStack em constante evolução, apaixonado por criar soluções que realmente funcionam. Com experiência prática em Python, React e automação com n8n durante meu estágio na AllTech Digital.",
+    "p2":"Busco sempre aprender e aplicar novas tecnologias de forma prática. Valorizo o trabalho em equipe, metodologias ágeis como Scrum, e o desenvolvimento de soluções que impactam positivamente o dia a dia das pessoas.",
     "p3":"Inglês Avançado — Comunicação, leitura e escrita em nível avançado, próximo da fluência.",
     "stats":[{"h":"FATEC","p":"Jacareí"},{"h":"DSM","p":"2025-2027"},{"h":"IA e Automação","p":"Experiência"}]
   },

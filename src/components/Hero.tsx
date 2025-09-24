@@ -5,30 +5,42 @@ import { useTranslation } from 'react-i18next'
 export default function Hero(){
   const { t } = useTranslation()
   const words = t('hero.typing', { returnObjects: true }) as string[]
-  const [idx, setIdx] = useState(0)
-  const [text, setText] = useState('')
-  const [del, setDel] = useState(false)
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+  const [displayText, setDisplayText] = useState('')
+  const [isDeleting, setIsDeleting] = useState(false)
 
-  // typing effect (preserva o comportamento do main.js)
-  useEffect(()=>{
-    const full = words[idx]
-    const step = () => {
-      setText(prev => {
-        if(!del){
-          const next = full.slice(0, prev.length+1)
-          if(next.length === full.length){ setDel(true); setTimeout(step, 1000); return next }
-          return next
-        } else {
-          const next = full.slice(0, prev.length-1)
-          if(next.length===0){ setDel(false); setIdx((idx+1)%words.length); setTimeout(step, 300); return next }
-          return next
-        }
-      })
+  // Typewriter effect funcional
+  useEffect(() => {
+    const currentWord = words[currentWordIndex]
+    let timeoutId: number
+
+    if (!isDeleting) {
+      // Digitando
+      if (displayText.length < currentWord.length) {
+        timeoutId = setTimeout(() => {
+          setDisplayText(currentWord.slice(0, displayText.length + 1))
+        }, 100)
+      } else {
+        // Pausa antes de deletar
+        timeoutId = setTimeout(() => {
+          setIsDeleting(true)
+        }, 2000)
+      }
+    } else {
+      // Deletando
+      if (displayText.length > 0) {
+        timeoutId = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1))
+        }, 50)
+      } else {
+        // Próxima palavra
+        setIsDeleting(false)
+        setCurrentWordIndex((prev) => (prev + 1) % words.length)
+      }
     }
-    const id = setTimeout(step, 120)
-    return () => clearTimeout(id)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[idx, words])
+
+    return () => clearTimeout(timeoutId)
+  }, [currentWordIndex, displayText, isDeleting, words])
 
   // Parallax sutil
   const [y, setY] = useState(0)
@@ -65,10 +77,16 @@ export default function Hero(){
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full"></div>
-              <p className="text-xl text-muted font-medium min-h-[2.5rem] flex items-center">
-                {text}
-                <span className="animate-pulse text-primary ml-1">|</span>
-              </p>
+              <div className="text-xl text-white font-medium min-h-[2.5rem] flex items-center">
+                <span className="text-white font-semibold relative">
+                  {displayText}
+                  <motion.span
+                    className="inline-block w-0.5 h-6 bg-primary ml-1"
+                    animate={{ opacity: [1, 0, 1] }}
+                    transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+                  />
+                </span>
+              </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">

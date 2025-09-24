@@ -42,23 +42,23 @@ export default function About(){
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            {stats.map((s, i)=> (
-              <motion.div 
-                key={i} 
-                className={`card card-hover p-8 text-center group ${i === 2 ? 'sm:col-span-1' : ''}`}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * i }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="space-y-3">
-                  <h3 className={`font-bold gradient-text ${i === 2 ? 'text-2xl' : 'text-3xl'}`}>{s.h}</h3>
-                  <p className="text-muted font-medium">{s.p}</p>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </motion.div>
-            ))}
+                {stats.map((s, i)=> (
+                  <motion.div
+                    key={i}
+                    className={`card card-hover p-8 text-center group ${i === 2 ? 'sm:col-span-1' : ''}`}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 * i }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <div className="space-y-3 flex flex-col items-center justify-center h-full">
+                      <h3 className={`font-bold gradient-text ${i === 2 ? 'text-2xl' : 'text-3xl'} text-center`}>{s.h}</h3>
+                      <p className="text-muted font-medium text-center">{s.p}</p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </motion.div>
+                ))}
           </motion.div>
         </div>
       </div>

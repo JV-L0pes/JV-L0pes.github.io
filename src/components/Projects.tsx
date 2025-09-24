@@ -2,14 +2,22 @@ import SectionHeader from './SectionHeader'
 import { motion } from 'framer-motion'
 
 const projects = [
-  {
-    title: 'EPI-YOLO11',
-    desc: 'Sistema de detecção de EPIs usando YOLO11 para segurança no trabalho. Projeto desenvolvido durante estágio na AllTech Digital, utilizado por clientes reais para identificação de equipamentos de proteção individual.',
-    demo: 'https://github.com/JV-L0pes/EPI-YOLO11', 
-    code: 'https://github.com/JV-L0pes/EPI-YOLO11',
-    technologies: ['Python', 'YOLO11', 'Computer Vision', 'OpenCV', 'Machine Learning'],
-    client: 'AllTech Digital - Projeto Real'
-  },
+      {
+        title: 'Sistema de Visualização e Disseminação de Dados Limnológicos',
+        desc: 'Sistema complexo para análise e visualização de dados limnológicos com múltiplos bancos de dados (Furnas, Balcar, SIMA). Projeto acadêmico da FATEC Jacareí em parceria com o INPE, desenvolvido com arquitetura de microserviços e metodologia Scrum.',
+        demo: 'https://github.com/ExceptionH4ndlers/ABP_2DSM',
+        code: 'https://github.com/ExceptionH4ndlers/ABP_2DSM',
+        technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Docker', 'SCRUM', 'CI/CD', 'GitHub Actions'],
+        client: 'FATEC Jacareí + INPE - Projeto Acadêmico'
+      },
+      {
+        title: 'EPI-YOLO11',
+        desc: 'Sistema de detecção de EPIs usando YOLO11 para segurança no trabalho. Projeto desenvolvido durante estágio na AllTech Digital, utilizado por clientes reais para identificação de equipamentos de proteção individual.',
+        demo: 'https://github.com/JV-L0pes/EPI-YOLO11',
+        code: 'https://github.com/JV-L0pes/EPI-YOLO11',
+        technologies: ['Python', 'YOLO11', 'Computer Vision', 'OpenCV', 'Machine Learning'],
+        client: 'AllTech Digital - Projeto Real'
+      },
   {
     title: 'ATENA',
     desc: 'Sistema de análise e processamento de dados com IA desenvolvido durante estágio. Projeto real utilizado por clientes para análise inteligente de dados utilizando técnicas de machine learning.',
@@ -100,23 +108,16 @@ export default function Projects(){
                 </div>
               </div>
               
-              {/* Actions */}
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <a 
-                  className="btn btn-primary flex-1 text-center" 
-                  target="_blank" 
-                  href={p.demo}
-                >
-                  Ver Projeto
-                </a>
-                <a 
-                  className="btn btn-outline flex-1 text-center" 
-                  target="_blank" 
-                  href={p.code}
-                >
-                  Código
-                </a>
-              </div>
+                  {/* Actions */}
+                  <div className="mt-8 flex justify-center">
+                    <a
+                      className="btn btn-primary text-lg px-10 py-4 font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                      target="_blank"
+                      href={p.demo}
+                    >
+                      Ver Projeto
+                    </a>
+                  </div>
             </motion.div>
           ))}
         </div>

@@ -23,7 +23,7 @@ export default function Education(){
               <p className="text-xl font-semibold text-primary">Multiplataforma</p>
               <div className="space-y-2">
                 <p className="text-lg text-white font-medium">Fatec Jacareí</p>
-                <p className="text-muted">2025 - 2027 (Previsão)</p>
+                    <p className="text-muted">2025 - 2027</p>
               </div>
             </div>
           </motion.div>

@@ -42,9 +42,9 @@ const experiences: Experience[] = [
   },
       {
         title: 'Scrum Master & Desenvolvedor FullStack',
-        company: 'ExceptionH4ndlers - Sistema Multi-Banco de Dados',
-        period: '2024 - 2025',
-        description: 'Desenvolvimento de sistema complexo para análise de dados limnológicos com múltiplos bancos de dados (Furnas, Balcar, SIMA). Projeto acadêmico da FATEC Jacareí com arquitetura de microserviços, React + TypeScript frontend e Node.js + PostgreSQL backend, totalmente containerizado com Docker.',
+        company: 'ExceptionH4ndlers - Sistema de Visualização e Disseminação de Dados Limnológicos',
+        period: '2025',
+        description: 'Desenvolvimento de sistema complexo para análise de dados limnológicos com múltiplos bancos de dados (Furnas, Balcar, SIMA). Projeto acadêmico da FATEC Jacareí em parceria com o INPE, com arquitetura de microserviços, React + TypeScript frontend e Node.js + PostgreSQL backend, totalmente containerizado com Docker.',
         technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'Docker', 'SCRUM', 'CI/CD', 'GitHub Actions'],
         achievements: [
           'Coordenação de equipe de 5 desenvolvedores como Scrum Master',
