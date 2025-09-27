@@ -1,5 +1,5 @@
 # João Victor Lopes Rosa - Portfólio
-📍 <a href="https://jv-l0pes-portfolio.onrender.com" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
+📍 <a href="https://jv-l0pes-porfolio.onrender.com" target="_blank" rel="noopener noreferrer">Acesse meu portfólio</a>
 
 <div align="center">
   <img src="./img/pfp.jpg" alt="Profile Picture" width="200" style="border-radius: 50%"/>
